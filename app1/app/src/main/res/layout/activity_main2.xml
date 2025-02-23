@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main2"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- Ảnh bìa truyện -->
+
+    <!-- Tên truyện -->
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_a3b01d12f250412a001beeaf6a86a4c" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cổ Chân Nhân"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/bookCover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tác giả -->
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tác giả: Gu Zhen Ren"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/bookTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Mô tả truyện -->
+    <TextView
+        android:id="@+id/bookDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cổ Chân Nhân là một bộ truyện huyền huyễn xoay quanh thế giới Cổ Trùng, nơi nhân vật chính Phương Nguyên là một thiên tài đầy tham vọng, luôn theo đuổi sức mạnh tối thượng..."
+        android:textSize="14sp"
+        android:textColor="#444444"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/bookAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"/>
+
+    <!-- Nút Đọc ngay -->
+    <Button
+        android:id="@+id/btnReadNow"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Đọc ngay"
+        android:backgroundTint="#FF5722"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/bookDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnReadNow2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#FF5722"
+        android:text="Quay lại"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bookDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
